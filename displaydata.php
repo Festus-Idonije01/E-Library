@@ -4,16 +4,6 @@ $username="root";
 $password="";
 $dbname="newdb";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-
-//fetch from database
-$sql = "SELECT * from bookdb";
-$result = $conn->query($sql);
 
 ?>
 <html>
